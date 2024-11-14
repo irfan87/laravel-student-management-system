@@ -26,49 +26,49 @@ Before installing, make sure you have the followings
 1. Clone the repository:
 
 ```bash
-	https://github.com/irfan87/laravel-student-management-system.git
+https://github.com/irfan87/laravel-student-management-system.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-	cd student-management-system.git
+cd student-management-system.git
 ```
 
 3. Install the dependencies using Composer:
 
 ```bash
-	composer install
+composer install
 ```
 
 4. Copy the `.env.example` file to `.env` and configure your environment variables (database, mail settings, etc).
 
 ```bash
-	cp .env.exampl .env
+cp .env.exampl .env
 ```
 
 5. Generate the application key:
 
 ```bash
-	php artisan key:generate
+php artisan key:generate
 ```
 
 6. Run the migrations to set up the database:
 
 ```bash
-	php artisan migrate
+php artisan migrate
 ```
 
 7. (Optional) Seed the database with sample data:
 
 ```bash
-	php artisan db:seed
+php artisan db:seed
 ```
 
 8. Start the local development server:
 
 ```bash
-	php artisan serve
+php artisan serve
 ```
 
 Now, you should be able to access the application at `http://localhost:8000`
