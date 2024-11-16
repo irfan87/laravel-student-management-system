@@ -10,10 +10,22 @@ class StudentController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $students = Student::simplePaginate(10);
+        $students = Student::simplePaginate(8)->onEachSide(2);
         $totalStudents = Student::count();
+
+        // when enter the false value, it will redirect to the 'students.index' page
+        if ($students->isEmpty() && $students->currentPage() > 1) {
+            // return redirect()->back();
+            return redirect()->route('students.index');
+        }
+
+        // when enter the negative value, it will redirect to the 'students.index' page
+        if ($request->has('page') && $request->page < 1) {
+            return redirect()->route('students.index', ['page' => 1]);
+        }
+
 
         return view('students.index', [
             'students' => $students,

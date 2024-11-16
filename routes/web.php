@@ -15,4 +15,4 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/students', [StudentController::class, 'index']);
+Route::get('/students', [StudentController::class, 'index'])->name('students.index');
