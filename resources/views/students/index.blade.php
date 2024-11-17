@@ -2,8 +2,10 @@
 	<x-slot:title>
 		Students List
 	</x-slot:title>
-	<h1>Students List</h1>
-	<p>Total of Students: {{ $totalStudents }}</p>
+	<div class="m-4">
+		<h1 class="text-lg font-bold mb-2">Students List</h1>
+		<p>Total of Students: {{ $totalStudents }}</p>
+	</div>
 	<div class="flex flex-col">
 		<div class="overflow-x-auto sm:-mx-auto lg:mx-auto">
 			<div class="inline-block min-w-full py-2 sm:px-6 lg:px-6">
