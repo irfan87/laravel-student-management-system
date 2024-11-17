@@ -5,7 +5,6 @@ A web-based application using Laravel to manage student admissions, course enrol
 ## Features
 
 -   <b>Student Management:</b> Admin can manage student records.
--   <b>Profile Management: </b> Students can manage and update their profile information.
 -   <b>Optional Payment: </b> Fee management and payment options are planned but not yet implemented.
 -   <b>Planned Features For Admin: </b> Admin will be able to manage course offerings in future versions.
 
